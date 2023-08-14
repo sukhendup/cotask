@@ -31,7 +31,6 @@ const Header = () => {
       </div>
       <article>
         <Link to={"/"}style={{ border: "1px solid #2c3e50",borderRadius: "2rem"}}>HOME</Link>
-        <Link to={"/profile"}style={{ border: "1px solid #2c3e50",borderRadius: "2rem"}}>PROFILE</Link>
         {isAuth ? (
           <button disabled ={loading} onClick={logoutHandler} className="btn" >LOGOUT</button>
         ) : (
