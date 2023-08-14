@@ -1,0 +1,32 @@
+.login > section {
+    @include container(900px, unset, 2rem);
+    min-height: 80%;
+    background-color: $color2;
+    margin-top: 15vh;
+    border: 1px solid #1abc9c;
+    border-radius: 10px;
+    > form {
+      @include flexBox(column, center, flex-start, 2rem);
+      @include inputs;
+      // margin-top: 10vh;
+      button {
+        @include styledText(0.9rem);
+        @include myButton(18.75rem, 1rem);
+      }
+    }
+  }
+  .forml > section {
+    @include container(900px, unset, 2rem);
+    min-height: 80%;
+    background-color: $color2;
+    border: 1px solid #1abc9c;
+    border-radius: 10px;
+    > form {
+      @include flexBox(column, center, flex-start, 2rem);
+      @include inputs;
+      button {
+        @include styledText(0.9rem);
+        @include myButton(18.75rem, 1rem);
+      }
+    }
+  }
